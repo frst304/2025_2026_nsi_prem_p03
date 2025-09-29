@@ -28,7 +28,7 @@ def login():
 
     for user in users:
         if username_input == user['id'] and password_input == user['password']:
-            print(f"Bienvenue {user['name']}! Vous êtes connecté.")
+            print(f"Bienvenue {user['name']}. Vous êtes connecté.")
             return
 
     print("Identifiant ou mot de passe incorrect.")
