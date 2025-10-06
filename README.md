@@ -4,6 +4,6 @@ Voici la team avec nos pseudos GitHub :
 
 | Prénom  | Pseudo GitHub    |
 |---------|------------------|
-| Thimothe | `thimothe.chps`  |
+| Timothee | `timothee.chps`  |
 | Haron    | `HaronElmz`      |
 | Victor   | `frst_304`       |
