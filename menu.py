@@ -16,7 +16,7 @@ def menu():
     print('')
     
     while True:
-        action = input('Choisissez une action (1, 2, ou 3) : ')
+        action = input('Choisissez une action : ')
 
         if action == "1":
             os.system('cls')
