@@ -12,7 +12,7 @@ def menu():
     user = login_fctn()
     os.system('cls')
     print(f"[------------------ Bienvenue {user['name']} ------------------]")
-    print("[1] Voir son solde  [2] Retirer de l'argent  [3] Ajouter de l'argent")
+    print("[1] Voir son solde  [2] Retirer de l'argent  [3] Ajouter de l'argent [q] Quitter le programme")
     print('')
     
     while True:
@@ -32,6 +32,11 @@ def menu():
             os.system('cls')
             add_money_fctn()
             break
+
+        
+        elif action == "q":
+            os.system('cls')
+            quit() 
         
         else:
             os.system('cls')
