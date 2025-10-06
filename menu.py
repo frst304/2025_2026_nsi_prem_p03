@@ -4,5 +4,5 @@ import os
 def menu():
     user = login_fctn()
     os.system('cls')
-    print(f'[------------------ Bienvenue {login_fctn.user['name']} ------------------]')
+    print(f'[------------------ Bienvenue {user['name']} ------------------]')
     print('')
