@@ -1,6 +1,7 @@
 from data_users import users
 
 def login_fctn():
+    print(f"[------------------ Connection à votre compte ------------------]")
     username_input = input('Id : ')
     password_input = input('Mot de passe : ')
 
