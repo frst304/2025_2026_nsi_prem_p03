@@ -11,34 +11,39 @@ from add_money import add_money_fctn # type: ignore
 def menu():
     user = login_fctn()
     os.system('cls')
-    print(f"[------------------ Bienvenue {user['name']} ------------------]")
-    print("[1] Voir son solde  [2] Retirer de l'argent  [3] Ajouter de l'argent [q] Quitter le programme")
-    print('')
-    
-    while True:
-        action = input('Choisissez une action : ')
 
-        if action == "1":
-            os.system('cls')
-            view_sold_fctn()
-            break
+    def display_menu(user):
 
-        elif action == "2":
-            os.system('cls')
-            pull_money_fctn()
-            break
-
-        elif action == "3":
-            os.system('cls')
-            add_money_fctn()
-            break
-
+        print(f"[------------------ Bienvenue {user['name']} ------------------]")
+        print("[1] Voir son solde  [2] Retirer de l'argent  [3] Ajouter de l'argent [q] Quitter le programme")
+        print('')
         
-        elif action == "q":
-            os.system('cls')
-            quit() 
-        
-        else:
-            os.system('cls')
-            print("Option invalide. Veuillez choisir 1, 2 ou 3.")
-            menu()
+        while True:
+            action = input('Choisissez une action : ')
+
+            if action == "1":
+                os.system('cls')
+                view_sold_fctn(user)
+                break
+
+            elif action == "2":
+                os.system('cls')
+                pull_money_fctn(user)
+                break
+
+            elif action == "3":
+                os.system('cls')
+                add_money_fctn(user)
+                break
+
+            
+            elif action == "q":
+                os.system('cls')
+                quit() 
+            
+            else:
+                os.system('cls')
+                print("Option invalide. Veuillez choisir 1, 2 ou 3.")
+                menu()
+
+    display_menu(user)
