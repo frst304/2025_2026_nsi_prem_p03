@@ -1,7 +1,7 @@
-from menu import menu
+from menu import menu_fctn
 
 def main():
-    menu()
+    menu_fctn()
 
 
 main()
