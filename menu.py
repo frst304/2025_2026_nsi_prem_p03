@@ -34,13 +34,14 @@ def menu_fctn():
 
 
 def display_menu_fctn(user):
+
     # Affiche un message de bienvenue personnalisé
     print(f"[------------------ Bienvenue {user['name']} ------------------]")
-    print("[1] Voir son solde  [2] Retirer de l'argent  [3] Ajouter de l'argent [q] Quitter le programme")
-    print('')
-    
+
     # Boucle principale du menu
     while True:
+        print("[1] Voir son solde  [2] Retirer de l'argent  [3] Ajouter de l'argent [q] Quitter le programme")
+        print('')
         # L’utilisateur choisit une action
         action = input('Choisissez une action : ')
 
