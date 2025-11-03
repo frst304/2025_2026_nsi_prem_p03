@@ -51,4 +51,3 @@ def pull_money_fctn(user):
     
     # Affiche le nouveau solde après retrait
     print(f"\nNouveau solde : {user['balance_account']:.2f} €")
-

@@ -7,6 +7,11 @@ sys.path.append(os.path.join(os.getcwd(), 'user_actions'))
 
 # On importe la fonction de connexion depuis le fichier login.py
 from login import login_fctn
+from add_money import add_money_fctn
+from pull_money import pull_money_fctn
+from view_sold import view_sold_fctn
+
+from create_acount import create_acount_fctn
 
 
 def menu_fctn():

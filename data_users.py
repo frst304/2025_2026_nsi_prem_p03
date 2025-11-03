@@ -4,7 +4,7 @@ users = [
         'password': '1234',
         'name': 'victor fortuna',
         'age': 18,
-        'balance_account': 20.30
+        'balance_account': 20000.30
     },
     {
         'id': 'h.elmounzil',

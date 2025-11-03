@@ -5,6 +5,7 @@ def add_money_fctn(user):
     try:
         # Demande à l'utilisateur de saisir le montant à déposer
         montant = float(input("Entrez le montant à déposer (€) : "))
+
         
         # Vérifie que le montant est supérieur à 0
         if montant <= 0:
