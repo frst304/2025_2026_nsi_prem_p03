@@ -3,6 +3,8 @@ import os
 
 sys.path.append(os.path.join(os.getcwd(), 'user_actions'))
 
+from login import login_fctn
+
 
 def menu_fctn():
     user = login_fctn()
@@ -41,4 +43,6 @@ def display_menu_fctn(user):
             else:
                 os.system('cls')
                 print("Option invalide. Veuillez choisir 1, 2 ou 3.")
-                menu_fctn()
+                break
+
+menu_fctn()
