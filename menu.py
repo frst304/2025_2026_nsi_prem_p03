@@ -8,10 +8,25 @@ from add_money import add_money_fctn
 from pull_money import pull_money_fctn
 from view_sold import view_sold_fctn
 
+from create_acount import create_acount_fctn
+
 
 def menu_fctn():
-    user = login_fctn()
-    os.system('cls' if os.name == 'nt' else 'clear')
+    print("[------------------ Bienvenue ------------------]")
+    print("[1] Ancien utilisateur  [2] Nouvel utilisateur  [q] Quitter le programme")
+    print('')
+    choice = input('Choisissez une action : ')
+
+    if choice == "1":
+         user = login_fctn()
+    elif choice == "2":
+         user = create_acount_fctn()
+    else:
+         print("Option invalide. Veuillez choisir 1 ou 2.")
+         quit()
+
+    os.system('cls')
+
     display_menu_fctn(user)
 
 
