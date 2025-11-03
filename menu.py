@@ -15,8 +15,18 @@ from create_acount import create_acount_fctn
 
 
 def menu_fctn():
-    # On appelle la fonction de connexion et on récupère les infos de l’utilisateur
-    user = login_fctn()
+    print("[------------------ Bienvenue ------------------]")
+    print("[1] Ancien utilisateur  [2] Nouvel utilisateur  [q] Quitter le programme")
+    print('')
+    choice = input('Choisissez une action : ')
+
+    if choice == "1":
+         user = login_fctn()
+    elif choice == "2":
+         user = create_acount_fctn()
+    else:
+         print("Option invalide. Veuillez choisir 1 ou 2.")
+         quit()
     # On efface l’écran (fonctionne sur Windows)
     os.system('cls')
     # On affiche le menu principal pour l’utilisateur connecté
@@ -38,19 +48,16 @@ def display_menu_fctn(user):
         if action == "1":
             os.system('cls')  # Efface l’écran
             view_sold_fctn(user)  # Appelle la fonction pour voir le solde
-            break
 
         # Option 2 : retirer de l’argent
         elif action == "2":
             os.system('cls')
             pull_money_fctn(user)
-            break
 
         # Option 3 : ajouter de l’argent
         elif action == "3":
             os.system('cls')
             add_money_fctn(user)
-            break
 
         # Option q : quitter le programme
         elif action == "q":
@@ -61,7 +68,6 @@ def display_menu_fctn(user):
         else:
             os.system('cls')
             print("Option invalide. Veuillez choisir 1, 2 ou 3.")
-            break
 
 
 # Exécution du programme : on lance le menu principal
