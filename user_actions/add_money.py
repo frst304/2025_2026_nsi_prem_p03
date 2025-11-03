@@ -23,6 +23,4 @@ def add_money_fctn(user):
         # Si l'utilisateur n'entre pas un nombre valide
         print("❌ Veuillez entrer un montant valide (ex : 50 ou 20.5).")
 
-    # Retourne l'utilisateur (même si aucune modification n’a eu lieu)
-    return user
-
+    return 
