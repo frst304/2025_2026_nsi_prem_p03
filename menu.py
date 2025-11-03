@@ -5,9 +5,23 @@ sys.path.append(os.path.join(os.getcwd(), 'user_actions'))
 
 from login import login_fctn
 
+from create_acount import create_acount_fctn
+
 
 def menu_fctn():
-    user = login_fctn()
+    print("[------------------ Bienvenue ------------------]")
+    print("[1] Ancien utilisateur  [2] Nouvel utilisateur  [q] Quitter le programme")
+    print('')
+    choice = input('Choisissez une action : ')
+
+    if choice == "1":
+         user = login_fctn()
+    elif choice == "2":
+         user = create_acount_fctn()
+    else:
+         print("Option invalide. Veuillez choisir 1 ou 2.")
+         quit()
+
     os.system('cls')
     display_menu_fctn(user)
 
