@@ -36,3 +36,5 @@ def pull_money_fctn(user):
     for billet, nb in decomposition.items():
         print(f"  - {nb} billet(s) de {billet} €")
     print(f"\nNouveau solde : {user['balance_account']:.2f} €")
+
+    return 
