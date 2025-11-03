@@ -9,18 +9,18 @@ def add_money_fctn(user):
         
         # Vérifie que le montant est supérieur à 0
         if montant <= 0:
-            print("❌ Le montant doit être supérieur à 0.")
+            print(" Le montant doit être supérieur à 0.")
             return user  # On retourne l'utilisateur sans modification
 
         # Ajoute le montant déposé au solde de l'utilisateur
         user['balance_account'] += montant
 
         # Affiche un message de confirmation
-        print(f"✅ Dépôt de {montant:.2f}€ effectué avec succès.")
-        print(f"💰 Nouveau solde : {user['balance_account']:.2f}€")
+        print(f" Dépôt de {montant:.2f}€ effectué avec succès.")
+        print(f" Nouveau solde : {user['balance_account']:.2f}€")
 
     except ValueError:
         # Si l'utilisateur n'entre pas un nombre valide
-        print("❌ Veuillez entrer un montant valide (ex : 50 ou 20.5).")
+        print(" Veuillez entrer un montant valide (ex : 50 ou 20.5).")
 
     return 
