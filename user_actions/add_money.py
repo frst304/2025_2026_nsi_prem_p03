@@ -1,26 +1,38 @@
+import json
+
 def add_money_fctn(user):
-    # Affiche le titre de la section de dépôt d'argent
     print("\n--- DÉPÔT D'ARGENT ---")
-    
+
     try:
         # Demande à l'utilisateur de saisir le montant à déposer
         montant = float(input("Entrez le montant à déposer (€) : "))
 
-        
-        # Vérifie que le montant est supérieur à 0
         if montant <= 0:
-            print(" Le montant doit être supérieur à 0.")
-            return user  # On retourne l'utilisateur sans modification
+            print("❌ Le montant doit être supérieur à 0.")
+            return user  # On ne modifie rien
 
-        # Ajoute le montant déposé au solde de l'utilisateur
-        user['balance_account'] += montant
+        # Lecture du fichier JSON existant
+        with open('data_users.json', 'r', encoding='utf-8') as file:
+            users = json.load(file)
 
-        # Affiche un message de confirmation
-        print(f" Dépôt de {montant:.2f}€ effectué avec succès.")
-        print(f" Nouveau solde : {user['balance_account']:.2f}€")
+        # On cherche l'utilisateur connecté dans la liste
+        for u in users:
+            if u['id'] == user['id']:
+                # On met à jour le solde dans la liste et dans la variable locale
+                u['balance_account'] += montant
+                user['balance_account'] = u['balance_account']
+                break
+
+        # On réécrit le fichier JSON avec les nouvelles données
+        with open('data_users.json', 'w', encoding='utf-8') as file:
+            json.dump(users, file, indent=4, ensure_ascii=False)
+
+        # Confirmation à l’écran
+        print(f"✅ Dépôt de {montant:.2f}€ effectué avec succès.")
+        print(f"💰 Nouveau solde : {user['balance_account']:.2f}€")
+        print("==============================\n")
 
     except ValueError:
-        # Si l'utilisateur n'entre pas un nombre valide
-        print(" Veuillez entrer un montant valide (ex : 50 ou 20.5).")
+        print("⚠️ Veuillez entrer un montant valide (ex : 50 ou 20.5).")
 
-    return 
+    return user
