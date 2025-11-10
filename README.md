@@ -142,43 +142,5 @@ Merci d’avoir utilisé notre DAB. À bientôt !
 
 Le programme se ferme proprement.
 
-⚠️ Remarques
 
-Les comptes et soldes sont simulés (non enregistrés de façon permanente).
-
-Les montants doivent être des multiples de 5 €.
-
-Le code PIN généré est unique à chaque utilisateur (tant que le programme reste en mémoire).
-
-🧩 Exemple de session complète
-=== Distributeur Automatique de Billets ===
-1. Se connecter avec un code PIN existant
-2. Créer un nouveau compte
-Choix : 2
-
-Entrez votre nom : Alice Martin
-Entrez votre date de naissance (JJ/MM/AAAA) : 24/03/1995
-
-Votre compte a été créé avec succès !
-Votre code PIN est : 5632
-
-=== MENU PRINCIPAL ===
-1. Consulter le solde
-2. Retirer de l’argent
-3. Déposer de l’argent
-4. Quitter
-Choix : 3
-
-Entrez le montant à déposer : 300
-Dépôt de 300 € effectué.
-Nouveau solde : 300 €
-
-Choix : 2
-Entrez le montant à retirer : 85
-Retrait de 85 € effectué avec succès.
-Billets distribués : 1x50€, 1x20€, 1x10€, 1x5€
-Nouveau solde : 215 €
-
-Choix : 4
-Merci d’avoir utilisé notre DAB. À bientôt !
 
