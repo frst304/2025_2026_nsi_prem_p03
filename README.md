@@ -15,7 +15,7 @@ Voici la team avec nos pseudos GitHub :
 Ce programme simule le fonctionnement d’un distributeur automatique de billets (DAB).
 Il permet à un utilisateur de :
 
-🧾 Créer un compte en entrant son nom et sa date de naissance (un code PIN lui sera attribué) ;
+🧾 Créer un compte en entrant son nom et son âge et en choisissant un mot de passe ;
 
 🔐 S’authentifier avec un code PIN existant ;
 
@@ -31,33 +31,34 @@ Il permet à un utilisateur de :
 
 Au démarrage, le programme affiche :
 
-=== Distributeur Automatique de Billets ===
-1. Se connecter avec un code PIN existant
-2. Créer un nouveau compte
+=== Bienvenue ===
+[1] Ancien utilisateur  
+[2] Nouvel utilisateur  
+[q] Quitter le programme
 Choix :
 
-🆕 Création d’un nouveau compte
+🆕 Nouvel utilisateur 
 
 Si vous choisissez l’option 2, le programme vous demandera :
 
-Entrez votre nom :
-Entrez votre date de naissance (JJ/MM/AAAA) :
+Entrez votre nom complet:
+Entrez votre âge  :
+Choisissez un mot de passe :
 
+Ensuite, un identifiant est généré automatiquement avec votre nom:
 
-Ensuite, un code PIN personnel est généré automatiquement :
+Compte créé avec succès. Votre identifiant est : a.ardaguller
 
-Votre compte a été créé avec succès !
-Votre code PIN est : 4729
-Gardez-le précieusement pour vos prochaines connexions.
 
 
 💶 Le compte démarre avec un solde initial de 0 €.
 
-🔐 Connexion à un compte existant
+🔐 Ancien utilisateur
 
-Si vous choisissez 1 – Se connecter, le programme demande :
+Si vous choisissez 1 – Ancien utilisateur, le programme demande :
 
-Entrez votre code PIN :
+Entrez votre identifiant :
+Puis votre mot de passe :
 
 
 ✅ En cas de code correct → accès au menu principal.
@@ -68,12 +69,11 @@ Entrez votre code PIN :
 
 Une fois connecté, le menu suivant apparaît :
 
-=== MENU PRINCIPAL ===
-1. Consulter le solde
-2. Retirer de l’argent
-3. Déposer de l’argent
-4. Quitter
-
+=== Bienvenue haron elmounzil ===
+[1] Voir son solde  
+[2] Retirer de l'argent 
+ [3] Ajouter de l'argent 
+ [q] Quitter le programme
 
 👉 Tapez le numéro correspondant à l’action que vous souhaitez effectuer.
 
@@ -111,8 +111,8 @@ Exemple :
 Dépôt de 200 € effectué.
 Nouveau solde : 965 €
 
-4️⃣ Quitter
-Tapez 4 pour quitter.
+4)Quitter
+Tapez q pour quitter.
 
 
 💬 Message de sortie :
