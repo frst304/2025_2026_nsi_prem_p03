@@ -24,7 +24,7 @@ def menu_fctn():
          user = login_fctn()
     elif choice == "2":
          user = create_acount_fctn()
-    elif action == "q":
+    elif choice == "q":
         os.system('cls')
         print('Merci d’avoir utilisé notre DAB. À bientôt !')
         quit()  # Quitte le programme
