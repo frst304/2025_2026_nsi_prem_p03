@@ -27,21 +27,7 @@ Quitter le programme proprement.
 
 Tout se fait dans le terminal (aucune interface graphique).
 
-⚙️ Prérequis
 
-Python 3.x installé sur votre ordinateur.
-
-Le fichier du programme dab.py (fourni par le développeur).
-
-🚀 Lancement du programme
-
-Ouvrez un terminal ou une invite de commandes.
-
-Placez-vous dans le dossier contenant le fichier dab.py.
-
-Exécutez le programme avec :
-
-python dab.py
 
 👤 Étape 1 – Connexion ou Création de compte
 
