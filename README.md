@@ -152,6 +152,6 @@ Le programme se ferme **proprement ✅**
 
 ## 🧠 Astuces
 
-- 🔒 Conservez votre **code PIN** en lieu sûr  
+- 🔒 Conservez votre **code PIN** à l'abris des regards 
 - 💼 Vérifiez toujours votre **solde avant un retrait**  
 - 💶 Les montants doivent être **multiples de 5** pour le retrait
