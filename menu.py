@@ -63,6 +63,7 @@ def display_menu_fctn(user):
         # Option q : quitter le programme
         elif action == "q":
             os.system('cls')
+            print('Merci d’avoir utilisé notre DAB. À bientôt !')
             quit()  # Quitte le programme
 
         # Si l’utilisateur entre une option invalide

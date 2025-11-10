@@ -1,0 +1,10 @@
+# Ignorer les fichiers compilés Python
+*.pyc
+
+# Ignorer les dossiers de cache Python
+__pycache__/
+
+# (Optionnel) Ignorer aussi les fichiers de cache temporaires
+*.pyo
+*.pyd
+*.log

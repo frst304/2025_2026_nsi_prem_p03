@@ -10,16 +10,25 @@ def create_acount_fctn():
         with open('data_users.json', 'r', encoding='utf-8') as file:
             users = json.load(file)
     except FileNotFoundError:
-        # Si le fichier n'existe pas encore, on crée une liste vide
         users = []
 
-    # Demande à l'utilisateur de saisir son nom complet
+    # Demande du nom complet
     name = input("Entrez votre nom complet : ").strip().lower()
 
-    # Demande à l'utilisateur de saisir son âge
-    age = int(input("Entrez votre âge : "))
+    # --- Saisie de l'âge avec vérification ---
+    while True:
+        try:
+            age = int(input("Entrez votre âge : "))
+            if age <= 0:
+                print("❌ L'âge doit être un nombre positif.")
+            elif age < 10:
+                print("⚠️ Vous devez avoir au moins 10 ans pour créer un compte.")
+            else:
+                break  # âge valide → on sort de la boucle
+        except ValueError:
+            print("⚠️ Veuillez entrer un nombre entier valide pour l'âge.")
 
-    # Crée un identifiant automatique à partir du prénom et du nom
+    # Création automatique de l'identifiant
     username = name.split()[0][0] + "." + name.split()[-1]
 
     # Vérifie si cet identifiant existe déjà
@@ -28,10 +37,10 @@ def create_acount_fctn():
             print(f"❌ L'identifiant '{username}' existe déjà. Veuillez réessayer.")
             return None
 
-    # Demande à l'utilisateur de choisir un mot de passe
+    # Saisie du mot de passe
     password = input("Choisissez un mot de passe : ").strip()
 
-    # Crée un dictionnaire pour le nouvel utilisateur
+    # Création du nouvel utilisateur
     new_user = {
         'id': username,
         'password': password,
@@ -40,18 +49,15 @@ def create_acount_fctn():
         'balance_account': 0.0
     }
 
-    # Ajoute le nouvel utilisateur à la liste
+    # Ajout à la liste et sauvegarde
     users.append(new_user)
 
-    # --- Enregistre la nouvelle liste dans le fichier JSON ---
     with open('data_users.json', 'w', encoding='utf-8') as file:
         json.dump(users, file, indent=4, ensure_ascii=False)
 
-    # Message de confirmation
+    # Confirmation
     print(f"✅ Compte créé avec succès ! Votre identifiant est : {username}")
 
-    # Pause avant de continuer
     input("Appuyez sur Entrée pour continuer...")
 
-    # Retourne les informations du nouvel utilisateur
     return new_user
