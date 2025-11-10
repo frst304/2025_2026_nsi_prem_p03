@@ -15,60 +15,58 @@ Voici la team avec nos pseudos GitHub :
 Ce programme simule le fonctionnement d’un distributeur automatique de billets (DAB).
 Il permet à un utilisateur de :
 
-Créer un compte en entrant son nom et sa date de naissance (un code PIN lui sera attribué) ;
+🧾 Créer un compte en entrant son nom et sa date de naissance (un code PIN lui sera attribué) ;
 
-S’authentifier avec un code PIN déjà existant ;
+🔐 S’authentifier avec un code PIN existant ;
 
-Consulter le solde de son compte ;
+💰 Consulter le solde de son compte ;
 
-Retirer et déposer de l’argent ;
+💸 Retirer ou déposer de l’argent ;
 
-Quitter le programme proprement.
+🚪 Quitter le programme proprement.
 
-Tout se fait dans le terminal (aucune interface graphique).
-
-
+🖥️ Tout se fait directement dans le terminal (aucune interface graphique).
 
 👤 Étape 1 – Connexion ou Création de compte
 
-Au démarrage, le programme vous propose deux choix :
+Au démarrage, le programme affiche :
 
 === Distributeur Automatique de Billets ===
 1. Se connecter avec un code PIN existant
 2. Créer un nouveau compte
 Choix :
 
-🆕 Si vous choisissez 2 – Créer un nouveau compte
+🆕 Création d’un nouveau compte
 
-Le programme vous demandera :
+Si vous choisissez l’option 2, le programme vous demandera :
 
-Entrez votre nom : 
+Entrez votre nom :
 Entrez votre date de naissance (JJ/MM/AAAA) :
 
 
-Ensuite, il génère automatiquement un code PIN personnel (affiché à l’écran), par exemple :
+Ensuite, un code PIN personnel est généré automatiquement :
 
 Votre compte a été créé avec succès !
 Votre code PIN est : 4729
 Gardez-le précieusement pour vos prochaines connexions.
 
 
-Le compte démarre avec un solde initial de 0 €.
+💶 Le compte démarre avec un solde initial de 0 €.
 
-🔐 Si vous choisissez 1 – Se connecter
+🔐 Connexion à un compte existant
 
-Le programme demande :
+Si vous choisissez 1 – Se connecter, le programme demande :
 
 Entrez votre code PIN :
 
 
-Si le code est correct, vous accédez au menu principal.
+✅ En cas de code correct → accès au menu principal.
 
-En cas d’erreur, le programme affiche un message d’erreur et redemande le code.
+❌ En cas d’erreur → message d’erreur et nouvelle demande.
 
 📋 Étape 2 – Menu Principal
 
-Une fois connecté, le menu suivant s’affiche :
+Une fois connecté, le menu suivant apparaît :
 
 === MENU PRINCIPAL ===
 1. Consulter le solde
@@ -79,7 +77,7 @@ Une fois connecté, le menu suivant s’affiche :
 
 👉 Tapez le numéro correspondant à l’action que vous souhaitez effectuer.
 
-💰 Fonctionnalités
+💰 Fonctionnalités Détailées
 1️⃣ Consulter le solde
 
 Affiche le solde actuel du compte :
@@ -87,19 +85,16 @@ Affiche le solde actuel du compte :
 Votre solde actuel est de : 850 €
 
 2️⃣ Retirer de l’argent
-
-Saisissez le montant souhaité :
-
-Entrez le montant à retirer : 
+Entrez le montant à retirer :
 
 
 Le programme vérifie que le montant :
 
-est disponible sur le compte ;
+💵 est disponible sur le compte ;
 
-est un multiple de 5 ;
+🔢 est un multiple de 5 ;
 
-peut être décomposé en billets (50€, 20€, 10€, 5€).
+🧩 peut être décomposé en billets (50€, 20€, 10€, 5€).
 
 Exemple :
 
@@ -108,25 +103,29 @@ Billets distribués : 1x50€, 1x20€, 1x10€, 1x5€
 Nouveau solde : 765 €
 
 3️⃣ Déposer de l’argent
-
-Entrez le montant à déposer :
-
 Entrez le montant à déposer :
 
 
-Le solde est mis à jour :
+Exemple :
 
 Dépôt de 200 € effectué.
 Nouveau solde : 965 €
 
 4️⃣ Quitter
+Tapez 4 pour quitter.
 
-Tapez 4 pour quitter :
+
+💬 Message de sortie :
 
 Merci d’avoir utilisé notre DAB. À bientôt !
 
 
-Le programme se ferme proprement.
+Le programme se ferme proprement ✅
 
+🧠 Astuces
 
+Conservez votre code PIN en lieu sûr 🔒
 
+Vérifiez toujours votre solde avant un retrait 💼
+
+Les montants doivent être multiples de 5 pour le retrait 💶
