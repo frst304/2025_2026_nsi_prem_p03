@@ -31,29 +31,29 @@ Il permet à un utilisateur de :
 
 Au démarrage, le programme affiche :
 
-\`\`\`text
+```text
 === Bienvenue ===
 [1] Ancien utilisateur  
 [2] Nouvel utilisateur  
 [q] Quitter le programme
 Choix :
-\`\`\`
+```
 
 ### 🆕 Nouvel utilisateur
 
 Si vous choisissez l’option **2**, le programme vous demandera :
 
-\`\`\`text
+```text
 Entrez votre nom complet :
 Entrez votre âge :
 Choisissez un mot de passe :
-\`\`\`
+```
 
 Ensuite, un identifiant est généré automatiquement à partir de votre nom :
 
-\`\`\`text
+```text
 Compte créé avec succès. Votre identifiant est : a.ardaguller
-\`\`\`
+```
 
 💶 Le compte démarre avec un **solde initial de 0 €**.
 
@@ -63,10 +63,10 @@ Compte créé avec succès. Votre identifiant est : a.ardaguller
 
 Si vous choisissez **1 – Ancien utilisateur**, le programme demande :
 
-\`\`\`text
+```text
 Entrez votre identifiant :
 Entrez votre mot de passe :
-\`\`\`
+```
 
 ✅ En cas de code correct → accès au **menu principal**.  
 ❌ En cas d’erreur → message d’erreur et nouvelle demande.
@@ -77,13 +77,13 @@ Entrez votre mot de passe :
 
 Une fois connecté, le menu suivant apparaît :
 
-\`\`\`text
+```text
 === Bienvenue haron elmounzil ===
 [1] Voir son solde  
 [2] Retirer de l'argent  
 [3] Ajouter de l'argent  
 [q] Quitter le programme
-\`\`\`
+```
 
 👉 Tapez le numéro correspondant à l’action souhaitée.
 
@@ -95,17 +95,17 @@ Une fois connecté, le menu suivant apparaît :
 
 Affiche le solde actuel du compte :
 
-\`\`\`text
+```text
 Votre solde actuel est de : 850 €
-\`\`\`
+```
 
 ### 2️⃣ Retirer de l’argent
 
 Le programme demande :
 
-\`\`\`text
+```text
 Entrez le montant à retirer :
-\`\`\`
+```
 
 Le programme vérifie que le montant :
 
@@ -115,24 +115,24 @@ Le programme vérifie que le montant :
 
 **Exemple :**
 
-\`\`\`text
+```text
 Retrait de 85 € effectué avec succès.
 Billets distribués : 1x50€, 1x20€, 1x10€, 1x5€
 Nouveau solde : 765 €
-\`\`\`
+```
 
 ### 3️⃣ Déposer de l’argent
 
-\`\`\`text
+```text
 Entrez le montant à déposer :
-\`\`\`
+```
 
 **Exemple :**
 
-\`\`\`text
+```text
 Dépôt de 200 € effectué.
 Nouveau solde : 965 €
-\`\`\`
+```
 
 ### 4️⃣ Quitter
 
@@ -140,9 +140,9 @@ Tapez `q` pour quitter.
 
 💬 **Message de sortie :**
 
-\`\`\`text
+```text
 Merci d’avoir utilisé notre DAB. À bientôt !
-\`\`\`
+```
 
 Le programme se ferme **proprement ✅**
 
