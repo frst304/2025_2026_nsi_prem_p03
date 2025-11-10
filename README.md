@@ -1,3 +1,5 @@
+<img width="887" height="241" alt="ascii-art-text" src="https://github.com/user-attachments/assets/dd232f9d-87b0-4894-86a1-8a08a5b219ce" />
+
 # 🚀 Équipe NSI Prem P03 – 2025/2026
 
 ### 👥 Membres de l’équipe
