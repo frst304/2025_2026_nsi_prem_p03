@@ -4,6 +4,9 @@ import os
 def create_acount_fctn():
     # Efface l'écran (fonctionne sous Windows)
     os.system('cls')
+    print("╔══════════════════════════════════════════════════════════════════╗")
+    print("║                 ✦✧  Création de votre compte  ✧✦                 ║")
+    print("╚══════════════════════════════════════════════════════════════════╝")
 
     # --- Lecture du fichier JSON (chargement des utilisateurs existants) ---
     try:

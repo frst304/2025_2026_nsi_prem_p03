@@ -10,7 +10,10 @@ def login_fctn():
     os.system('cls')
 
     # Message d’accueil pour la connexion
-    print(f"[------------------ Connexion à votre compte ------------------]")
+    print("╔══════════════════════════════════════════════════════════════════╗")
+    print("║                 ✦✧  Connexion à votre compte  ✧✦                 ║")
+    print("╚══════════════════════════════════════════════════════════════════╝")
+
     
     # On demande à l’utilisateur de saisir son identifiant et son mot de passe
     username_input = input('Id : ')

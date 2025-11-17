@@ -1,7 +1,10 @@
 import json
 
 def send_money_fctn(user):
-    print("\n=== ENVOI D'ARGENT À UN UTILISATEUR ===")
+    print("\n╔══════════════════════════════════════════════════════════╗")
+    print("║           ✦✧  ENVOI D'ARGENT À UN UTILISATEUR  ✧✦       ║")
+    print("╚══════════════════════════════════════════════════════════╝")
+
 
     try:
         # Nom ou ID du destinataire
@@ -48,9 +51,10 @@ def send_money_fctn(user):
             json.dump(users, file, indent=4, ensure_ascii=False)
 
         # Confirmation
-        print(f"✅ Vous avez envoyé {montant:.2f}€ à l'utilisateur {receiver_id}.")
-        print(f"💰 Nouveau solde : {user['balance_account']:.2f}€")
-        print("==============================\n")
+        print("╔══════════════════════════════════════════════════════╗")
+        print(f"║   ✅ Vous avez envoyé {montant:.2f} € à l'utilisateur {receiver_id}.      ║")
+        print(f"║   💰 Nouveau solde : {user['balance_account']:.2f} €                    ║")
+        print("╚══════════════════════════════════════════════════════╝\n")
 
     except ValueError:
         print("⚠️ Veuillez entrer un montant valide (ex : 50 ou 20.5).")

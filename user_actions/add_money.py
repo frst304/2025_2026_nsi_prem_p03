@@ -1,7 +1,10 @@
 import json
 
 def add_money_fctn(user):
-    print("\n--- DÉPÔT D'ARGENT ---")
+    print("\n╔══════════════════════════════════════════════╗")
+    print("║               ✦✧  DÉPÔT D'ARGENT  ✧✦          ║")
+    print("╚══════════════════════════════════════════════╝")
+
 
     try:
         # Demande à l'utilisateur de saisir le montant à déposer
@@ -28,9 +31,11 @@ def add_money_fctn(user):
             json.dump(users, file, indent=4, ensure_ascii=False)
 
         # Confirmation à l’écran
-        print(f"✅ Dépôt de {montant:.2f}€ effectué avec succès.")
-        print(f"💰 Nouveau solde : {user['balance_account']:.2f}€")
-        print("==============================\n")
+        print("╔══════════════════════════════════════════════╗")
+        print(f"║   ✅ Dépôt de {montant:.2f}€ effectué avec succès.          ")
+        print(f"║   💰 Nouveau solde : {user['balance_account']:.2f}€          ")
+        print("╚══════════════════════════════════════════════╝\n")
+
 
     except ValueError:
         print("⚠️ Veuillez entrer un montant valide (ex : 50 ou 20.5).")

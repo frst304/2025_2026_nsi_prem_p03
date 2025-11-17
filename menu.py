@@ -52,13 +52,24 @@ def menu_fctn():
 
 def display_menu_fctn(user):
 
-    # Affiche un message de bienvenue personnalisé
-    print(f"[------------------ Bienvenue {user['name']} ------------------]")
+     # Affiche un message de bienvenue personnalisé
+    print("╔══════════════════════════════════════════════════════════════════╗")
+    print(f"║ ✦✧  Bienvenue {user['name']} — Distributeur Automatique ✧✦      ║")
+    print("╚══════════════════════════════════════════════════════════════════╝")
+    print("")
 
-    # Boucle principale du menu
+     # Boucle principale du menu
     while True:
-        print("[1] Voir son solde  [2] Retirer de l'argent  [3] Ajouter de l'argent [4] Envoyer à un ami [q] Quitter le programme")
-        print('')
+        print("╔══════════════════════════════════════════════════════════════════╗")
+        print("║                     ✦✧  Menu Principal du D.A.B ✧✦               ║")
+        print("╠══════════════════════════════════════════════════════════════════╣")
+        print("║   1 • Voir son solde                                             ║")
+        print("║   2 • Retirer de l'argent                                        ║")
+        print("║   3 • Ajouter de l'argent                                        ║")
+        print("║   4 • Envoyer à un ami                                           ║")
+        print("║   q • Quitter le programme                                       ║")
+        print("╚══════════════════════════════════════════════════════════════════╝")
+        print("")
         # L’utilisateur choisit une action
         action = input('Choisissez une action : ')
 
@@ -85,13 +96,18 @@ def display_menu_fctn(user):
         # Option q : quitter le programme
         elif action == "q":
             os.system('cls')
-            print('Merci d’avoir utilisé notre DAB. À bientôt !')
+            print("\n" + "="*50)
+            print("           Merci d’avoir utilisé notre DAB")
+            print("                  À très bientôt !")
+            print("="*50 + "\n")
             quit()  # Quitte le programme
 
         # Si l’utilisateur entre une option invalide
         else:
             os.system('cls')
-            print("Option invalide. Veuillez choisir 1, 2 ou 3.")
+            print("\n┌" + "─"*60 + "┐")
+            print("│    ⚠️  Option invalide. Veuillez choisir 1, 2, 3, 4 ou q.   │")
+            print("└" + "─"*60 + "┘\n")
 
 
 # Exécution du programme : on lance le menu principal

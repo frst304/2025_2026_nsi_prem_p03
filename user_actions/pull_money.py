@@ -2,7 +2,10 @@ import json
 
 def pull_money_fctn(user):
     # Affiche le titre de la section de retrait
-    print("\n=== Retrait d'argent ===")
+    print("\n╔══════════════════════════════════════════════╗")
+    print("║               ✦✧  RETRAIT D'ARGENT  ✧✦        ║")
+    print("╚══════════════════════════════════════════════╝")
+
 
     try:
         # Demande à l'utilisateur de saisir le montant à retirer
@@ -61,11 +64,13 @@ def pull_money_fctn(user):
 
     # --- Affichage du résumé ---
     print("\n✅ Retrait effectué !")
-    print(f"💰 Montant retiré : {montant:.2f} €")
-    print("💵 Détails des billets :")
+    print("╔══════════════════════════════════════════════╗")
+    print(f"║   💰 Montant retiré : {montant:.2f} €                        ║")
+    print("║   💵 Détails des billets :                                   ║")
     for billet, nb in decomposition.items():
-        print(f"  - {nb} billet(s) de {billet} €")
-    print(f"\nNouveau solde : {user['balance_account']:.2f} €")
-    print("==============================\n")
+        print(f"║     - {nb} billet(s) de {billet} €                               ║")
+    print(f"║                                                          ")
+    print(f"║   💳 Nouveau solde : {user['balance_account']:.2f} €             ║")
+    print("╚══════════════════════════════════════════════╝\n")
 
     return user
