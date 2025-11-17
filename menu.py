@@ -32,12 +32,18 @@ def menu_fctn():
          user = create_acount_fctn()
     elif choice == "q":
         os.system('cls')
-        print('Merci d’avoir utilisé notre DAB. À bientôt !')
+        print("\n" + "="*50)
+        print("           Merci d’avoir utilisé notre DAB")
+        print("                  À très bientôt !")
+        print("="*50 + "\n")
         quit()  # Quitte le programme
 
     else:
-         print("Option invalide. Veuillez choisir 1, 2 ou q.")
-         quit()
+        print("\n┌" + "─"*50 + "┐")
+        print("│ ⚠️  Option invalide. Veuillez choisir 1, 2 ou q.  │")
+        print("└" + "─"*50 + "┘\n")
+        
+        quit()
     # On efface l’écran (fonctionne sur Windows)
     os.system('cls')
     # On affiche le menu principal pour l’utilisateur connecté
