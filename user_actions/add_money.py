@@ -2,7 +2,7 @@ import json
 
 def add_money_fctn(user):
     print("\n╔══════════════════════════════════════════════╗")
-    print("║               ✦✧  DÉPÔT D'ARGENT  ✧✦          ║")
+    print("║              ✦✧  DÉPÔT D'ARGENT  ✧✦          ║")
     print("╚══════════════════════════════════════════════╝")
 
 

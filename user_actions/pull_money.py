@@ -3,7 +3,7 @@ import json
 def pull_money_fctn(user):
     # Affiche le titre de la section de retrait
     print("\n╔══════════════════════════════════════════════╗")
-    print("║               ✦✧  RETRAIT D'ARGENT  ✧✦        ║")
+    print("║              ✦✧  RETRAIT D'ARGENT  ✧✦        ║")
     print("╚══════════════════════════════════════════════╝")
 
 

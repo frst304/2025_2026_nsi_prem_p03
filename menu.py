@@ -54,7 +54,7 @@ def display_menu_fctn(user):
 
      # Affiche un message de bienvenue personnalisé
     print("╔══════════════════════════════════════════════════════════════════╗")
-    print(f"║ ✦✧  Bienvenue {user['name']} — Distributeur Automatique ✧✦      ║")
+    print(f" ✦✧  Bienvenue {user['name']} — Distributeur Automatique ✧✦      ")
     print("╚══════════════════════════════════════════════════════════════════╝")
     print("")
 

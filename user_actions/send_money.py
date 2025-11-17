@@ -52,8 +52,8 @@ def send_money_fctn(user):
 
         # Confirmation
         print("╔══════════════════════════════════════════════════════╗")
-        print(f"║   ✅ Vous avez envoyé {montant:.2f} € à l'utilisateur {receiver_id}.      ║")
-        print(f"║   💰 Nouveau solde : {user['balance_account']:.2f} €                    ║")
+        print(f"   ✅ Vous avez envoyé {montant:.2f} € à l'utilisateur {receiver_id}.      ")
+        print(f"  💰 Nouveau solde : {user['balance_account']:.2f} €                    ")
         print("╚══════════════════════════════════════════════════════╝\n")
 
     except ValueError:
