@@ -157,7 +157,7 @@ Le programme se ferme **proprement ✅**
 - 💶 Les montants doivent être **multiples de 5** pour le retrait
 
 
-Histoire du projet
+## Histoire du projet
 
 Au début, lors du premier cours, nous avons commencé à travailler tous ensemble sur nos ordinateurs sur le menu principal du programme. Très vite, nous avons constaté que cette méthode n’était pas efficace : à la fin du cours, nous devions supprimer beaucoup de contenu à cause de conflits entre nos codes respectifs.
 
