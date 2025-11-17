@@ -15,10 +15,15 @@ from create_acount import create_acount_fctn
 
 
 def menu_fctn():
-    print("[------------------ Bienvenue ------------------]")
-    print("[1] Ancien utilisateur  [2] Nouvel utilisateur  [q] Quitter le programme")
-    print('')
-    choice = input('Choisissez une action : ')
+    print("╔══════════════════════════════════════════════╗")
+    print("║       ✦✧  D.A.B — Accès Utilisateur ✧✦       ║")
+    print("╠══════════════════════════════════════════════╣")
+    print("║   1 • Connexion ancien utilisateur           ║")
+    print("║   2 • Création nouvel utilisateur            ║")
+    print("║   q • Quitter le système                     ║")
+    print("╚══════════════════════════════════════════════╝")
+    print("")
+    choice = input("⮞ Sélectionnez une option : ")
 
     if choice == "1":
          user = login_fctn()
