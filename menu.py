@@ -10,6 +10,7 @@ from login import login_fctn
 from add_money import add_money_fctn
 from pull_money import pull_money_fctn
 from view_sold import view_sold_fctn
+from send_money import send_money_fctn
 
 from create_acount import create_acount_fctn
 
@@ -50,7 +51,7 @@ def display_menu_fctn(user):
 
     # Boucle principale du menu
     while True:
-        print("[1] Voir son solde  [2] Retirer de l'argent  [3] Ajouter de l'argent [q] Quitter le programme")
+        print("[1] Voir son solde  [2] Retirer de l'argent  [3] Ajouter de l'argent [4] Envoyer à un ami [q] Quitter le programme")
         print('')
         # L’utilisateur choisit une action
         action = input('Choisissez une action : ')
@@ -69,6 +70,11 @@ def display_menu_fctn(user):
         elif action == "3":
             os.system('cls')
             add_money_fctn(user)
+        
+        # Option 4 : envoyer de l’argent
+        elif action == "4":
+            os.system('cls')
+            send_money_fctn(user)
 
         # Option q : quitter le programme
         elif action == "q":
