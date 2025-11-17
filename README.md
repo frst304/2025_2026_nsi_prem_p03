@@ -155,3 +155,32 @@ Le programme se ferme **proprement ✅**
 - 🔒 Conservez votre **code PIN** à l'abris des regards 
 - 💼 Vérifiez toujours votre **solde avant un retrait**  
 - 💶 Les montants doivent être **multiples de 5** pour le retrait
+
+
+Histoire du projet
+
+Au début, lors du premier cours, nous avons commencé à travailler tous ensemble sur nos ordinateurs sur le menu principal du programme. Très vite, nous avons constaté que cette méthode n’était pas efficace : à la fin du cours, nous devions supprimer beaucoup de contenu à cause de conflits entre nos codes respectifs.
+
+Nous avons alors changé de stratégie : chacun s’est réparti les fonctions à développer de son côté, puis nous avons intégré nos travaux une fois terminés. Cette méthode nous a permis de progresser semaine après semaine.
+
+Cependant, certaines parties ont dû être refaites, car certaines fonctions s’appelaient entre elles, provoquant des dysfonctionnements. Après avoir corrigé ces problèmes, nous avons pu avancer vers la finalisation du projet.
+
+Tâches restantes
+
+Il nous restait trois tâches importantes à accomplir :
+
+1 -Faire en sorte que les opérations de retrait et de dépôt modifient réellement le programme.
+
+2 -Commenter le code pour le rendre plus compréhensible.
+
+3 -Rédiger le fichier README.
+
+Nous nous sommes réparti ces tâches :
+
+Victor : ajout de fonctionnalités supplémentaires, comme l’échange d’argent entre utilisateurs.
+
+Haron : amélioration de l’interface graphique.
+
+Timothée : correction et optimisation des subtilités du code.
+
+Ainsi s’est déroulé notre projet en Python, dont l’objectif était de coder une banque pour trois utilisateurs.
