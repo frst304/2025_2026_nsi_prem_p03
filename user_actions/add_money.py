@@ -1,4 +1,5 @@
 import json
+import os
 
 def add_money_fctn(user):
     print("\n╔══════════════════════════════════════════════╗")
@@ -35,6 +36,8 @@ def add_money_fctn(user):
         print(f"║   ✅ Dépôt de {montant:.2f}€ effectué avec succès.          ")
         print(f"║   💰 Nouveau solde : {user['balance_account']:.2f}€          ")
         print("╚══════════════════════════════════════════════╝\n")
+        input("Appuyez sur Entrée pour continuer...")
+        os.system('cls')
 
 
     except ValueError:

@@ -1,3 +1,5 @@
+import os
+
 def view_sold_fctn(user):
     # Affiche le titre de la section
     print("\n╔══════════════════════════════════════════════╗")
@@ -12,3 +14,5 @@ def view_sold_fctn(user):
     
     # Ligne de séparation pour une meilleure lisibilité
     print("╚══════════════════════════════════════════════╝\n")
+    input("Appuyez sur Entrée pour continuer...")
+    os.system('cls')
