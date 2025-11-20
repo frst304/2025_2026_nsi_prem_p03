@@ -21,11 +21,17 @@ Il permet à un utilisateur de :
 
 - 🧾 **Créer un compte** (nom, âge, mot de passe)
 - 🔐 **S’authentifier** avec un identifiant et un mot de passe
-- 💰 **Consulter le solde** de son compte
-- 💸 **Retirer ou déposer de l’argent**
+- 💰 **Consulter le solde**
+- 💸 **Retirer de l’argent**
+- ➕ **Déposer de l’argent**
+- 🤝 **Envoyer de l’argent à un autre utilisateur**
+- ⚙️ **Gérer les paramètres du compte**
+  - 🔑 Modifier le mot de passe  
+  - 🆔 Modifier l’identifiant  
+  - 🗑️ Supprimer son compte
 - 🚪 **Quitter le programme proprement**
 
-> 🖥️ Tout se fait directement dans le **terminal** (aucune interface graphique).
+> 🖥️ Tout se fait dans le **terminal**, sans interface graphique.
 
 ---
 
@@ -34,16 +40,18 @@ Il permet à un utilisateur de :
 Au démarrage, le programme affiche :
 
 ```text
-=== Bienvenue ===
-[1] Ancien utilisateur  
-[2] Nouvel utilisateur  
-[q] Quitter le programme
-Choix :
+╔══════════════════════════════════════════════╗
+║       ✦✧  D.A.B — Accès Utilisateur ✧✦       ║
+╠══════════════════════════════════════════════╣
+║   1 • Connexion ancien utilisateur           ║
+║   2 • Création nouvel utilisateur            ║
+║   q • Quitter le système                     ║
+╚══════════════════════════════════════════════╝
 ```
 
-### 🆕 Nouvel utilisateur
+### 🆕 Création d’un nouveau utilisateur
 
-Si vous choisissez l’option **2**, le programme vous demandera :
+Si vous choisissez **2**, il vous sera demandé :
 
 ```text
 Entrez votre nom complet :
@@ -51,57 +59,62 @@ Entrez votre âge :
 Choisissez un mot de passe :
 ```
 
-Ensuite, un identifiant est généré automatiquement à partir de votre nom :
+Puis un identifiant automatique sera généré :
 
 ```text
 Compte créé avec succès. Votre identifiant est : a.ardaguller
 ```
 
-💶 Le compte démarre avec un **solde initial de 0 €**.
+💶 Le solde initial est de **0 €**.
 
 ---
 
-### 🔐 Ancien utilisateur
+### 🔐 Connexion d’un utilisateur existant
 
-Si vous choisissez **1 – Ancien utilisateur**, le programme demande :
+Si vous choisissez **1**, le programme demande :
 
 ```text
 Entrez votre identifiant :
 Entrez votre mot de passe :
 ```
 
-✅ En cas de code correct → accès au **menu principal**.  
-❌ En cas d’erreur → message d’erreur et nouvelle demande.
+- ✅ Identifiants corrects → accès au menu principal  
+- ❌ Identifiants incorrects → nouvel essai  
 
 ---
 
 ## 📋 Étape 2 – Menu Principal
 
-Une fois connecté, le menu suivant apparaît :
+Après connexion :
 
 ```text
-=== Bienvenue haron elmounzil ===
-[1] Voir son solde  
-[2] Retirer de l'argent  
-[3] Ajouter de l'argent  
-[q] Quitter le programme
+╔══════════════════════════════════════════════════════════════════╗
+║                  ✦✧  Menu Principal du D.A.B ✧✦                  ║
+╠══════════════════════════════════════════════════════════════════╣
+║   1 • Voir son solde                                             ║
+║   2 • Retirer de l'argent                                        ║
+║   3 • Ajouter de l'argent                                        ║
+║   4 • Envoyer à un ami                                           ║
+║   5 • Parametres du compte                                       ║
+║   q • Quitter le programme                                       ║
+╚══════════════════════════════════════════════════════════════════╝
 ```
-
-👉 Tapez le numéro correspondant à l’action souhaitée.
 
 ---
 
-## 💰 Fonctionnalités détaillées
+# 💰 Fonctionnalités détaillées
 
-### 1️⃣ Consulter le solde
+## 1️⃣ Voir son solde
 
-Affiche le solde actuel du compte :
+Le programme affiche :
 
 ```text
 Votre solde actuel est de : 850 €
 ```
 
-### 2️⃣ Retirer de l’argent
+---
+
+## 2️⃣ Retirer de l’argent
 
 Le programme demande :
 
@@ -109,13 +122,13 @@ Le programme demande :
 Entrez le montant à retirer :
 ```
 
-Le programme vérifie que le montant :
+Le montant doit :
 
-- 💵 est **disponible sur le compte** ;
-- 🔢 est un **multiple de 5** ;
-- 🧩 peut être **décomposé en billets** (50€, 20€, 10€, 5€).
+- être disponible  
+- être un multiple de **5**  
+- pouvoir être distribué en billets (50€, 20€, 10€, 5€)
 
-**Exemple :**
+Exemple :
 
 ```text
 Retrait de 85 € effectué avec succès.
@@ -123,33 +136,119 @@ Billets distribués : 1x50€, 1x20€, 1x10€, 1x5€
 Nouveau solde : 765 €
 ```
 
-### 3️⃣ Déposer de l’argent
+---
+
+## 3️⃣ Ajouter de l’argent
 
 ```text
 Entrez le montant à déposer :
 ```
 
-**Exemple :**
+Exemple :
 
 ```text
 Dépôt de 200 € effectué.
 Nouveau solde : 965 €
 ```
 
-### 4️⃣ Quitter
+---
 
-Tapez `q` pour quitter.
+## 4️⃣ Envoyer de l’argent à un ami
 
-💬 **Message de sortie :**
+Permet d’envoyer de l’argent à un autre utilisateur du DAB.
 
 ```text
-Merci d’avoir utilisé notre DAB. À bientôt !
+Entrez l'identifiant du destinataire :
+Entrez le montant à envoyer :
 ```
 
-Le programme se ferme **proprement ✅**
+Conditions :
+
+- Le destinataire doit exister  
+- Le montant doit être positif  
+- Le solde doit être suffisant  
+
+Exemple :
+
+```text
+Vous envoyez 50 € à : haron.elm
+✔ Transfert effectué avec succès !
+Nouveau solde : 915 €
+```
 
 ---
 
+# ⚙️ 5️⃣ Paramètres du compte
+
+Menu des paramètres :
+
+```text
+╔══════════════════════════════════════════════╗
+║         ✦✧  Parametre du compte ✧✦           ║
+╠══════════════════════════════════════════════╣
+║   1 • Modification de mot de passe           ║
+║   2 • Modification de nom d'utilisateur      ║
+║   3 • Suppression du compte                  ║
+║   q • Retour                                 ║
+╚══════════════════════════════════════════════╝
+```
+
+### 🔑 Modifier le mot de passe
+
+```text
+Ancien mot de passe :
+Nouveau mot de passe :
+Confirmez le mot de passe :
+```
+
+Exemple :
+
+```text
+✔ Mot de passe mis à jour !
+```
+
+---
+
+### 🆔 Modifier l’identifiant
+
+```text
+Nouvel identifiant :
+```
+
+Si l’identifiant est disponible :
+
+```text
+✔ Identifiant mis à jour !
+```
+
+---
+
+### 🗑️ Supprimer le compte
+
+```text
+Êtes-vous sûr de vouloir supprimer votre compte ? (oui/non) :
+```
+
+Si confirmé :
+
+```text
+✔ Votre compte a bien été supprimé.
+```
+
+Le programme se ferme automatiquement.
+
+---
+
+# 🚪 Quitter le programme
+
+Tapez `q` pour quitter.
+
+```text
+Merci d’avoir utilisé notre DAB.
+À très bientôt !
+```
+
+---
 ## 🧠 Astuces
 
 - 🔒 Conservez votre **code PIN** à l'abris des regards 
