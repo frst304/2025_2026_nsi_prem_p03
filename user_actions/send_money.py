@@ -1,4 +1,5 @@
 import json
+import os
 
 def send_money_fctn(user):
     print("\n╔══════════════════════════════════════════════════════════╗")
@@ -55,6 +56,9 @@ def send_money_fctn(user):
         print(f"   ✅ Vous avez envoyé {montant:.2f} € à l'utilisateur {receiver_id}.      ")
         print(f"  💰 Nouveau solde : {user['balance_account']:.2f} €                    ")
         print("╚══════════════════════════════════════════════════════╝\n")
+
+        input("Appuyez sur Entrée pour continuer...")
+        os.system('cls')
 
     except ValueError:
         print("⚠️ Veuillez entrer un montant valide (ex : 50 ou 20.5).")

@@ -1,4 +1,5 @@
 import json
+import os
 
 def pull_money_fctn(user):
     # Affiche le titre de la section de retrait
@@ -72,5 +73,8 @@ def pull_money_fctn(user):
     print(f"                                                          ")
     print(f"   💳 Nouveau solde : {user['balance_account']:.2f} €             ")
     print("╚══════════════════════════════════════════════╝\n")
+
+    input("Appuyez sur Entrée pour continuer...")
+    os.system('cls')
 
     return user
