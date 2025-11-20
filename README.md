@@ -159,28 +159,33 @@ Le programme se ferme **proprement ✅**
 
 ## Histoire du projet
 
-Au début, lors du premier cours, nous avons commencé à travailler tous ensemble sur nos ordinateurs sur le menu principal du programme. Très vite, nous avons constaté que cette méthode n’était pas efficace : à la fin du cours, nous devions supprimer beaucoup de contenu à cause de conflits entre nos codes respectifs.
+Lors de notre tout premier cours, nous avons commencé à travailler ensemble sur le menu principal de notre programme. Chacun d’entre nous a ouvert son ordinateur, et nous avons commencé à coder simultanément, partageant nos écrans pour avancer le plus rapidement possible. Cependant, très vite, nous avons constaté que cette approche n’était pas vraiment efficace. En fin de séance, il y avait de nombreux conflits entre nos codes respectifs, ce qui nous obligeait à supprimer une grande partie du contenu que nous avions créé, voire à recommencer certaines parties du programme. C'était frustrant, mais cela nous a permis de prendre du recul et de repenser notre stratégie de travail.
 
-Nous avons alors changé de stratégie : chacun s’est réparti les fonctions à développer de son côté, puis nous avons intégré nos travaux une fois terminés. Cette méthode nous a permis de progresser semaine après semaine.
+Nous avons donc décidé de changer de méthode. Plutôt que de travailler tous ensemble sur le même fichier en temps réel, nous avons opté pour une répartition des tâches. Chaque membre de l'équipe s'est vu attribuer une fonction spécifique à développer de son côté. Une fois que chacun avait terminé sa partie, nous avons procédé à l'intégration de nos travaux respectifs. Cette nouvelle organisation a bien fonctionné et nous a permis de progresser semaine après semaine, chacun avançant à son propre rythme tout en étant responsable d'une partie bien précise du projet.
 
-Cependant, certaines parties ont dû être refaites, car certaines fonctions s’appelaient entre elles, provoquant des dysfonctionnements. Après avoir corrigé ces problèmes, nous avons pu avancer vers la finalisation du projet.
+Cependant, au bout de quelques semaines, nous avons rencontré un autre obstacle. Certaines de nos fonctions s’appelaient les unes les autres, ce qui a provoqué des dysfonctionnements dans le programme. C'était une situation un peu complexe à résoudre, mais après plusieurs heures de debugging ,de réflexion, et avec l'aide de notre professeur nous avons trouvé des solutions pour corriger ces problèmes. Grâce à cette expérience, nous avons appris l’importance de la planification et de l’organisation du code dès le début du projet. Une fois ces erreurs corrigées, nous avons pu avancer plus sereinement vers la finalisation du projet.
 
-Tâches restantes
+À une semaine de la présentation finale, il nous restait trois tâches importantes à accomplir pour être prêts à présenter notre application de banque :
 
-Il nous restait trois tâches importantes à accomplir :
+Faire en sorte que les opérations de retrait et de dépôt modifient réellement le solde des comptes. Cela nous avait posé problème pendant les premières phases de développement, et il était essentiel de s'assurer que ces fonctionnalités soient parfaitement opérationnelles avant la présentation.
 
-1 -Faire en sorte que les opérations de retrait et de dépôt modifient réellement le programme.
+Commenter le code pour le rendre plus compréhensible. Dès le début du projet, nous savions qu’il était important de bien commenter le code afin de faciliter sa compréhension, aussi bien pour nous-mêmes que pour les autres qui pourraient être amenés à le lire ou à l'utiliser par la suite. Mais au fur et à mesure des semaines, nous avons souvent oublié de le faire au fur et à mesure de notre avancée. Finalement, nous avons décidé de prendre le temps, lors de la dernière phase du projet, pour ajouter des commentaires détaillés dans chaque fonction. Cela a permis de rendre notre code beaucoup plus clair et de nous assurer que toute l'équipe comprenait les choix techniques effectués.
 
-2 -Commenter le code pour le rendre plus compréhensible.
+Rédiger le fichier README. Cette étape était primordiale, car elle permettait de bien expliquer le fonctionnement du programme et d’informer les utilisateurs sur la manière de l’utiliser. Nous avons donc réparti cette tâche entre nous, en ajoutant à la fois des instructions d’utilisation, des explications sur l’architecture du code, et des indications sur les prérequis nécessaires pour faire tourner l’application.
 
-3 -Rédiger le fichier README.
+Répartition des tâches :
 
-Nous nous sommes réparti ces tâches :
+Victor : Il s'est occupé de l'ajout de fonctionnalités supplémentaires, en particulier la gestion de l’échange d’argent entre utilisateurs. Cette fonctionnalité, qui n’était pas demandée dans le cahier des charges initial, a été ajoutée lors de notre dernier cours. Nous avons trouvé que cela apportait un réel plus à l'application, permettant aux utilisateurs d’envoyer de l'argent à leurs amis. C'était un défi technique intéressant, car il fallait gérer les transactions entre plusieurs comptes tout en respectant les règles de sécurité.
 
-Victor : ajout de fonctionnalités supplémentaires, comme l’échange d’argent entre utilisateurs.
+Haron : Sa tâche principale a été l’amélioration de l'interface graphique et la rédaction du readme
 
-Haron : amélioration de l’interface graphique.
+Timothée : Timothée s’est concentré sur la correction et l’optimisation du code. En plus de régler certains bugs persistants, il a procédé à des refactorisations pour rendre le code plus performant et éviter les redondances inutiles. Il a également été très impliqué dans la rédaction des commentaires pour chaque fonction, afin que notre programme soit plus lisible et facilement compréhensible.
 
-Timothée : correction et optimisation des subtilités du code.
+Dernière ligne droite
+
+
+Finalement, grâce à une bonne gestion du temps et  une répartition efficace des tâches, nous avons pu livrer notre projet dans les délais et avec une application de banque fonctionnelle et bien structurée. Le fait de commenter en continu le code et de vérifier màinutieusement chaque fonctionnalité avant la présentation nous a permis de terminer le projet dans de bonnes conditions, tout en ayant une bonne maîtrise de notre travail. C’était une expérience enrichissante qui nous a permis de travailler en équipe et d’approfondir nos compétences en programmation.
+
+
 
 Ainsi s’est déroulé notre projet en Python, dont l’objectif était de coder une banque pour trois utilisateurs.
