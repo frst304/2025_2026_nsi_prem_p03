@@ -30,11 +30,15 @@ def send_money_fctn(user):
 
         if receiver is None:
             print("❌ Aucun utilisateur trouvé avec cet ID.")
+            input("Appuyez sur Entrée pour continuer...")
+            os.system('cls')
             return user
 
         # Vérification du solde
         if user['balance_account'] < montant:
             print("❌ Solde insuffisant pour effectuer ce transfert.")
+            input("Appuyez sur Entrée pour continuer...")
+            os.system('cls')
             return user
 
         # Déduction chez l'envoyeur
