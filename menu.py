@@ -11,6 +11,7 @@ from add_money import add_money_fctn
 from pull_money import pull_money_fctn
 from view_sold import view_sold_fctn
 from send_money import send_money_fctn
+from settings import settings_fctn
 
 from create_acount import create_acount_fctn
 
@@ -54,19 +55,20 @@ def display_menu_fctn(user):
 
      # Affiche un message de bienvenue personnalisé
     print("╔══════════════════════════════════════════════════════════════════╗")
-    print(f" ✦✧  Bienvenue {user['name']} — Distributeur Automatique ✧✦      ")
+    print(f"  ✦✧  Bienvenue {user['name']} — Distributeur Automatique ✧✦     ")
     print("╚══════════════════════════════════════════════════════════════════╝")
     print("")
 
      # Boucle principale du menu
     while True:
         print("╔══════════════════════════════════════════════════════════════════╗")
-        print("║                     ✦✧  Menu Principal du D.A.B ✧✦               ║")
+        print("║                  ✦✧  Menu Principal du D.A.B ✧✦                  ║")
         print("╠══════════════════════════════════════════════════════════════════╣")
         print("║   1 • Voir son solde                                             ║")
         print("║   2 • Retirer de l'argent                                        ║")
         print("║   3 • Ajouter de l'argent                                        ║")
         print("║   4 • Envoyer à un ami                                           ║")
+        print("║   5 • Parametres du compte                                       ║")
         print("║   q • Quitter le programme                                       ║")
         print("╚══════════════════════════════════════════════════════════════════╝")
         print("")
@@ -92,6 +94,11 @@ def display_menu_fctn(user):
         elif action == "4":
             os.system('cls')
             send_money_fctn(user)
+
+        # Option 5 : parametres
+        elif action == "5":
+            os.system('cls')
+            settings_fctn(user)
 
         # Option q : quitter le programme
         elif action == "q":
