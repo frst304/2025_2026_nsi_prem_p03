@@ -19,12 +19,5 @@
         "name": "timothee chapuis",
         "age": 16,
         "balance_account": 1467870.3
-    },
-    {
-        "id": "s.srg",
-        "password": "rfshgdres",
-        "name": "srg",
-        "age": 12,
-        "balance_account": 0.0
     }
 ]
