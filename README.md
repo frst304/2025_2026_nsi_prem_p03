@@ -41,7 +41,7 @@ Au démarrage, le programme affiche :
 
 ```text
 ╔══════════════════════════════════════════════╗
-║       ✦✧  D.A.B — Accès Utilisateur ✧✦       ║
+║       ✦✧  D.A.B — Accès Utilisateur ✧✦     ║
 ╠══════════════════════════════════════════════╣
 ║   1 • Connexion ancien utilisateur           ║
 ║   2 • Création nouvel utilisateur            ║
