@@ -89,7 +89,7 @@ Après connexion :
 
 ```text
 ╔══════════════════════════════════════════════════════════════════╗
-║                  ✦✧  Menu Principal du D.A.B ✧✦                  ║
+║                  ✦✧  Menu Principal du D.A.B ✧✦                ║
 ╠══════════════════════════════════════════════════════════════════╣
 ║   1 • Voir son solde                                             ║
 ║   2 • Retirer de l'argent                                        ║
